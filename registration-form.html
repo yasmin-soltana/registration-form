@@ -4,13 +4,12 @@
 	<title>Registration Form</title>
 </head>
 <body>
-	<h1>Registration Form</h1>
-	<h2>Basic Information</h2>
+	<h1>Registration form</h1>
 
-	
-	<form action="" method="GET" autocomplete="off" novalidate target="_blank">
+	<form>
+		<fieldset>
+			<legend><h2>Basic Information:</h2></legend>
 		
-
 	<label for="fname">First Name:</label>
 	<input type="email" id="fname" name="fname">
 
@@ -29,26 +28,26 @@
 	<br>
 	<input type="radio" id="other" name="gender" value="other">
 	<label for="other">Other</label>
-	<br><br>
 
-
-	
-	<label for="date">DoB</label>
+    <label for="date">DoB</label>
 	<input type="date"  name="DoB" >
-	
 	<br><br>
-
-
-	<label for="Religion">Religion:</label>
+	
+	 <label for="Religion">Religion:</label>
 	<select id="Religion"> <!-- multiple -->
 		<option value="muslim">muslim</option>
 		<option value="hindu">hindu</option>
 		<option value="chiristian">chirstian</option>
 		<option value="budda">budda</option>
 	</select>
+     
+       </fieldset>
+      </form>
 
-	<br><br>
-	 <h2>Contact Information</h2>
+      <form>
+	     <fieldset>
+
+	 <legend><h2>Contact Information:</h2></legend>
 
 	 <label for="present address">present address:</label>
 	<textarea id="present address" name="present address" rows="5" cols="7"></textarea>
@@ -67,9 +66,18 @@
 	  <label for="personal website">personal website:</label>
 	<input type="url" id="personal website" name="personal website">
 
+      </fieldset>
+       </form>
 
+      <fieldset>
 
-     <br><br>
+      <legend><h2>Academic information:</h2></legend>
+      <label for="Academic information">academic information:</label>
+	<input type="email" id="Academic information" name="Academic information">
+
+      </fieldset>
+      
+     
 	<input type="submit" value="Submit">
 
 	</form>
